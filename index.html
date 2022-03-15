@@ -5,9 +5,109 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/main.css">
-  <title>template</title>
+  <title>Ringo</title>
 </head>
 <body>
-  <h1>Hello world!</h1>
+  <header class="header">
+    <div class="container">
+      <div class="header__desktop">
+        <a class="header__link" href="./index.html" >
+          <img class="header__logo" src="./images/logo.svg" width="122" height="53" alt="company logo" >
+        </a>
+        <nav class="header__navs">
+          <a class="header__navs-link" href="#" >Напрямки</a>
+          <a class="header__navs-link" href="#" >Про компанію</a>
+          <a class="header__navs-link" href="#" >Переваги</a>
+          <a class="header__navs-link" href="#" >Етапи роботи</a>
+        </nav>
+        <div class="header__socials">
+          <a class="header__socials-link" href="#" >
+            <img class="header__socials-icon" src="./images/insta.svg" width="18" height="18" alt="instagram logo" >
+            <img class="header__socials-icon" src="./images/faceb.svg" width="10" height="20" alt="facebook logo" >
+          </a>
+          <a class="header__socials-link" href="#" ></a>
+        </div>
+          <a class="header__tel" href="tel:+380 67661 5415" >+380 67661 5415</a>
+          <button class="hamburger">
+            <img class="hamburger__img" src="./images/mhamburger.svg" width="34" height="34" alt="hamburger menu" >
+          </button>
+        </div><!--- End of header-desktop -->
+      </div><!--- End of container -->
+
+      <div class="header__mobile">
+        <button class="header__mobile-btn">
+          <img class="header__mobile-clos" src="./images/btnclosed.png" width="24" height="24" alt="closed icon" >
+        </button>
+        <a class="header__tel" href="tel:+380 67661 5415" >+380 67661 5415</a>
+          <nav class="header__navbar">
+          <a class="header__navbar-icon" href="#" >Напрямки</a>
+          <a class="header__navbar-link" href="#" >Про компанію</a>
+          <a class="header__navbar-link" href="#" >Переваги</a>
+          <a class="header__navbar-link" href="#" >Етапи роботи</a>
+        </nav>
+        </div>
+      </div><!--- End of header-mobile -->
+
+      <div class="header__mobile320--on">
+        <a class="header__link" href="./index.html" >
+          <img class="header__logo" src="./images/logo.svg" width="100" height="43" alt="company logo" >
+        </a>
+        <button class="header__mobile320-btn">
+          <img class="header__mobile320-clos" src="./images/btnclosed.png" width="24" height="24" alt="closed icon" >
+        </button>
+        <nav class="header__mobile320-nav">
+          <a class="header__mobile320-link" href="#" >Напрямки</a>
+          <a class="header__mobile320-link" href="#" >Про компанію</a>
+          <a class="header__mobile320-link" href="#" >Переваги</a>
+          <a class="header__mobile320-link" href="#" >Етапи роботи</a>
+        </nav>
+        <div class="header__mobile320-socials">
+          <a class="header__mobile320-link" href="#" >
+            <img class="header__mobile320-icon" src="./images/insta.svg" width="18" height="18" alt="instagram logo" >
+            <img class="header__mobile320-icon" src="./images/faceb.svg" width="10" height="20" alt="facebook logo" >
+          </a>
+          <a class="header__mobile320-link" href="#" ></a>
+        </div>
+        <a class="header__mobile320-tel" href="tel:+380 67661 5415" >+380 67661 5415</a>
+         <div class="header__mobile320-bttn">
+            <a class="header__mobile320-title" href="#" >Обговорити проект</a>
+          </div>
+        </div>
+      </div>
+
+    </header><!--- End of header -->
+     
+   <div class="hero">
+      <div class="hero__large--container">
+        <div class="container">
+          <div class="hero__top">
+            <h1 class="hero__heading">виробництво<br>меблів</h1>
+            <p class="hero__text">
+              Ми виконуємо комплексне виготовлення корпусних меблів для житлових  комерційних приміщень, забезпечимо Вас якісним меблевим продуктом власного виробництва. 
+            </p>
+            <div class="hero__btn">
+               <a class="hero__link" href="#" >Обговорити проект</a>
+            </div>
+           
+          </div>
+        
+          <div class="hero__bottom">
+            <div class="hero__left">
+              <button class="hero__left-btn">
+                <img class="hero__left-img" src="./images/Arrowleft.png" width="20" height="0" alt="arrow icon" >
+              </button>
+              <button class="hero__left-btn">
+                <img class="hero__left-img" src="./images/Arrowlright.png"vwidth="20" height="0" alt="arrow icon" >
+              </button>
+            </div><!--- End of hero-left -->
+            <div class="hero__right">
+              <button class="hero__right-btn">1</button>
+              <button class="hero__right-btn">2</button>
+              <button class="hero__right-btn">3</button>
+            </div><!--- End of hero-right -->
+          </div>
+        </div><!--- End of container -->
+      </div><!--- End of large-container -->
+    </div><!--- End of hero -->
 </body>
 </html>

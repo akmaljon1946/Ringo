@@ -1,0 +1,58 @@
+// Raleway 400,500,600,700- cyrillic //
+
+/* raleway-regular - cyrillic */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: 
+    url('../fonts/raleway-v26-cyrillic-regular.woff2') format('woff2'),
+    url('../fonts/raleway-v26-cyrillic-regular.woff') format('woff');
+}
+
+/* raleway-500 - cyrillic */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  src: 
+    url('../fonts/raleway-v26-cyrillic-500.woff2') format('woff2'),
+    url('../fonts/raleway-v26-cyrillic-500.woff') format('woff');
+}
+
+/* raleway-600 - cyrillic */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  src: 
+    url('../fonts/raleway-v26-cyrillic-600.woff2') format('woff2'),
+    url('../fonts/raleway-v26-cyrillic-600.woff') format('woff');
+}
+
+/* raleway-700 - cyrillic */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: l
+    url('../fonts/raleway-v26-cyrillic-700.woff2') format('woff2'),
+    url('../fonts/raleway-v26-cyrillic-700.woff') format('woff');
+}
+
+/* lato-700 - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: 
+    url('../fonts/lato-v22-latin-700.woff2') format('woff2'),
+    url('../fonts/lato-v22-latin-700.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: local('Lato Semibold'), local('Lato-Semibold'), url('latosemibold.woff2') format('woff2'), url('latosemibold.woff') format('woff'), url('latosemibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}

@@ -1,0 +1,12 @@
+@mixin box() {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+@mixin link() {
+  text-decoration: none;
+  color: #000000;
+  
+}
