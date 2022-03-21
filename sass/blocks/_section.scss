@@ -1,0 +1,167 @@
+.section{
+  padding-top: 140px;
+  padding-bottom: 140px;
+
+  &__head{
+    margin: 0;
+    font-weight: 600;
+    font-size: 46px;
+    line-height: 125%;
+    text-align: center;
+    padding-bottom: 80px;
+    text-transform: uppercase;
+    color: $Ringo-black;
+  }
+
+  &__list{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+  }
+
+  &__item{
+    max-width: 393px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-left: 1px solid rgba(40, 43, 34, 0.2);
+  }
+
+  &__title{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    color: $Ringo-black;
+    opacity: 0.5;
+  }
+
+  &__heading{
+    margin: 0;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    color: $Ringo-green;
+  }
+  
+  &__heading3{
+    margin: 0;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    color: $Ringo-green;
+  }
+}
+// responsive
+
+@media only screen and (max-width:1000px) {
+  .section{
+    &__item{
+      max-width: 320px;
+       padding-left: 20px;
+       padding-right: 20px;
+    }
+
+    &__img--cover {
+      width: 100%;
+      max-width: 333px;
+      min-width: 260px;
+      height: auto;
+      max-height: 320px;
+      min-height: 320px;
+      object-fit: cover;
+ }
+
+    &__heading{
+      padding-bottom: 54px;
+    }
+
+    &__heading3{
+      padding-bottom: 30px;
+    }
+  }
+}
+
+
+@media only screen and (max-width:640px) {
+  .section{
+  
+    &__list{
+      justify-content: start;
+      flex-wrap: wrap;
+    }
+
+    &__item{
+      max-width: 300px;
+      margin-bottom: 60px;
+    }
+
+  }
+}
+
+@media only screen and (max-width:320px) {
+  .section{
+    padding-top: 80px;
+
+    .container{
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    &__head{
+      width: 295px;
+      padding-bottom: 50px;
+      font-weight: 700;
+      font-size: 28px;
+    }
+  
+    &__list{
+      justify-content: start;
+      flex-wrap: wrap;
+    }
+
+    &__item{
+      max-width: 300px;
+      margin-bottom: 50px;
+      border: none;
+      padding: 0;
+    }
+
+    &__heading{
+      padding-top: 20px;
+      padding-bottom: 15px;
+      font-size: 20px;
+      line-height: 145%;
+    }
+
+    &__heading3{
+      padding-top: 20px;
+      padding-bottom: 15px;
+      font-size: 20px;
+      line-height: 145%;
+    }
+
+    &__title{
+      font-size: 20px;
+      line-height: 145%;
+    }
+
+  }
+}
+  
+ 
+
+
+
+
+
+
+
+
+
+ 

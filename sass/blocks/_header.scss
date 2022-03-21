@@ -36,27 +36,28 @@
 
   &__tel{
     @include link;
-    font: {
-      family: "Lato",sans-serif;
-      style: normal;
-      weight: 600;
-      size: 20px;
-    }
-    
+    font-family: 'Lato',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #3D4A39;
     height: 100%;
     text-transform: uppercase;
     color: #3D4A39;
     
+        
   }
 
   &__tel::before{
-    content: "";
+    content: "\e900";
     background-image: url(../images/phoneicon.svg);
     background-size:cover;
     background-repeat: no-repeat;
     width: 22px;
     height: 22px;
-    background-position: -4px 0;
+    background-position: -4px -1px;
     display:inline-block;
   }
 

@@ -1,32 +1,35 @@
 .hero{
   &__large--container{
     max-width: 1600px;
-    height: 687px;
     margin: 0 auto;
-    background-image: url(../images/cabinet.png);
-    // background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.2) -13.19%, rgba(0, 0, 0, 0.85) 94.01%);
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.2) -13.19%, rgba(0, 0, 0, 0.85) 94.01%),
+    url(../images/cabinet.png);
     background-repeat: no-repeat;
-    background-size: contain;
-    padding: {
-      top: 120px;
-      left: 531px;
-      right: 531px;
-    }
+    background-size: cover;
+    background-position:center;
+   
 
+  }
+  
+  &__top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 
     
 
   &__heading{
     margin: 0;
-    margin-left: 42px;
     width: 446px;
     font-weight: 700;
     font-size: 56px;
     line-height: 120%;
     text-align: center;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: $Ringo-white;
   }
 
   &__text{
@@ -34,9 +37,10 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 150%;
-    
+    padding-top: 20px;
+    padding-bottom: 50px;
     text-align: center;
-    color: #FFFFFF;
+    color: $Ringo-white;
     opacity: 0.8;
   }
 
@@ -46,9 +50,20 @@
      display: flex;
      align-items:center;
      justify-content: center;
-     background: #AE7B3C;
+     font-weight: 700;
+     font-size: 16px;
+     line-height: 100%;
+     background: $Ringo-brown;
      box-shadow: 0px 20px 25px 
      rgba(0, 0, 0, 0.05);
+    
+
+
+     &:hover{
+       background: $Ringo-brown;
+       opacity: 0.7;
+       transition: all 355ms ease;
+     }
   }
 
   &__link{
@@ -56,19 +71,143 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 100%;
-    color: #FFFFFF;
+    color: $Ringo-white;
  
   }
    
 
 
   &__bottom{
-    margin-top: 120px;
+    padding-top: 25px;
+    padding-bottom: 45px;
     @include box;
+    border-top: 1px solid $Ringo-white;
+  }
+
+  &__left-btn{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    &:hover {
+      color: $Ringo-brown;
+      opacity: 0.7;
+      transition: all 355ms ease;
+    }
+
+  }
+
+  &__left-img{
+    width: 15px;
+    height: 12px;
+  }
+
+  &__right{
+    width: 100%;
+    max-width: 126px;
+    @include box;
+  }
+
+  &__right-btn{
+    width: 32px;
+    height: 32px;
+    border: 1px solid $Ringo-white;
+    opacity: 0.3;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: 'Lato',sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: $Ringo-white;
+  
+  }
+  &__right-but{
+    width: 32px;
+    height: 32px;
+    border: 1px solid $Ringo-white;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: 'Lato' ,sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: $Ringo-white;
+
   }
 
 }
 
+// responsive
+
+@media only screen and (max-width:1000px) {
+  .hero{
+    &__large--container{
+         background-image: linear-gradient(180deg, 
+         rgba(0, 0, 0, 0.2) -13.19%,
+         rgba(0, 0, 0, 0.85) 94.01%),
+            url(../images/tv-cabinet1000.png);
+            background-position: 0 0;
+    }
+  }
+}
+
+
+@media only screen and (max-width:640px) {
+  .hero{
+    &__large--container{
+         background-image: linear-gradient(180deg,
+           rgba(0, 0, 0, 0.2) -13.19%,
+           rgba(0, 0, 0, 0.85) 94.01%),
+              url(../images/tv-cabinet640.png);
+              background-position: 0 0;
+    }
+  }
+}
+
+@media only screen and (max-width:320px) {
+  .hero{
+    &__large--container{
+      background-image: linear-gradient(180deg,
+        rgba(0, 0, 0, 0.2) -13.19%,
+        rgba(0, 0, 0, 0.85) 94.01%),
+          url(../images/tv-cabinet320.png);
+          background-size:auto;
+          background-position: 0 0;
+    }
+
+    &__top{
+      padding-top: 70px;
+    }
+
+    &__btn{
+      width: 300px;
+      margin-bottom: 62px;
+    }
+
+    &__bottom{
+      justify-content: center;
+    }
+
+    &__left{
+      display: none;
+    }
+
+    &__heading{
+      font-size: 28px;
+      line-height: 120%;
+    }
+
+    &__text{
+      width: 295px;
+      margin-top: 28px;
+      margin-bottom: 30px;
+      font-size: 16px;
+      line-height: 145%;
+    }
+  }
+}
 
 
 
