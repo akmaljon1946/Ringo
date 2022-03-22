@@ -107,6 +107,7 @@
 @media only screen and (max-width:320px) {
   .section{
     padding-top: 80px;
+    padding-bottom: 80px;
 
     .container{
       padding-left: 10px;
@@ -130,6 +131,11 @@
       margin-bottom: 50px;
       border: none;
       padding: 0;
+
+      &:last-child{
+        margin-bottom: 0;
+      }
+
     }
 
     &__heading{
