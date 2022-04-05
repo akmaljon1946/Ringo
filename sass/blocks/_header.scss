@@ -194,7 +194,7 @@
     }
   }
 
-@media only screen and (max-width:320px) {
+@media only screen and (max-width:480px) {  //320
   .header{
     &__socials,&__tel{
       display: none;
